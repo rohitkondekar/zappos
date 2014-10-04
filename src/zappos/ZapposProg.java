@@ -1,4 +1,4 @@
-package zappos;
+//package zappos;
 
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -137,8 +137,6 @@ public class ZapposProg {
 				limitValue = val;
 				System.out.println("Parameter value set to : "+limitValue);
 				System.out.println();
-				System.out.println("Top 3 Results -- ");
-				System.out.println();
 			}
 			catch(Exception e){
 				return false;
@@ -268,7 +266,8 @@ public class ZapposProg {
 				float sum = 0;
 				for (int i = 0; i < permutationArray.length; i++) {
 					if(permutationArray[i]==1){
-						itemNames.append(items.get(list[i]).get("productId")+": "+items.get(list[i]).get("productName")+" price ="+items.get(list[i]).get("price")+" ; ");
+//						itemNames.append(items.get(list[i]).get("productId")+": "+items.get(list[i]).get("productName")+" price ="+items.get(list[i]).get("price")+" ; ");
+						itemNames.append(items.get(list[i]).get("productName")+" price ="+items.get(list[i]).get("price")+" ; ");
 						sum = sum+getPrice(items.get(list[i]).get("price"));
 					}
 				}
@@ -305,11 +304,13 @@ public class ZapposProg {
 			while(!maxHeapItems.isEmpty()){
 				minHeapItem.add(maxHeapItems.remove());
 			}
-			
+			System.out.println("Top 3 Results -- ");
+			System.out.println();
 			while(!minHeapItem.isEmpty()){
 				ItemsObj obj = minHeapItem.remove();		
-				System.out.print(obj.getStrItems());
-				System.out.println("  with difference value = "+obj.getDifference());
+				System.out.println(obj.getStrItems());
+				System.out.println("Difference value = "+obj.getDifference());
+				System.out.println();
 			}
 		}	
 	}
