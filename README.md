@@ -61,7 +61,9 @@ Controls the accuracy and running time tradeoff. Therefore optimized to run fast
 How to instantiate object
 ============================================
 ZapposProg zp = new ZapposProg();
+
 ProcessItems pt = zp.new ProcessItems(num,totPrice);
+
 pt.runProcess();		
 
 
