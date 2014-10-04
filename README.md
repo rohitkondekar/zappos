@@ -34,11 +34,11 @@ HeapSize: 3 <3 products are recommended in best first order> - can be changed us
 
 Variable Parameters:
 ============================================
-limitValue      #The set size, on which subsets are generated.
-numResults      #Heap Size.
-retrievedItems  #Number of items to get using API calls.
-maxPages        #Max number of pages to search.
-numIterations   #number of times to repeat the subset generation process.
+1. limitValue      #The set size, on which subsets are generated.
+2. numResults      #Heap Size.
+3. retrievedItems  #Number of items to get using API calls.
+4. maxPages        #Max number of pages to search.
+5. numIterations   #number of times to repeat the subset generation process.
 
 
 
